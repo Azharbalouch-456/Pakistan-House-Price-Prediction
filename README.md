@@ -1,9 +1,9 @@
-# 🏠 Pakistan House Price Prediction (Machine Learning)
+# 🏠 Pakistan House Price Prediction (Machine Learning & Web App)
 
-An end-to-end Machine Learning regression project that predicts residential property prices across major cities in Pakistan using real estate listing data.
+An end-to-end Machine Learning regression project and interactive web application that predicts residential property prices across major cities in Pakistan using real estate listing data.
 
 ## 📌 Project Overview
-Real estate pricing in Pakistan depends heavily on location, property size, and structure. In this project, I cleaned and analyzed a dataset of **168,000+ property listings** to build and compare regression models that accurately estimate house prices.
+Real estate pricing in Pakistan depends heavily on location, property size, and structure. In this project, I cleaned and analyzed a dataset of **168,000+ property listings**, trained and compared regression models achieving **91.8% accuracy**, and deployed an interactive **Gradio Web App** for real-time price estimation.
 
 ## ⚙️ Step-by-Step Workflow
 1. **Data Cleaning & Outlier Removal:**
@@ -17,8 +17,9 @@ Real estate pricing in Pakistan depends heavily on location, property size, and 
 3. **Model Training & Evaluation:**
    - Split the cleaned dataset into **80% training** and **20% testing** sets.
    - Trained a baseline **Linear Regression** model and upgraded to a **Random Forest Regressor** for higher accuracy.
-4. **Model Serialization:**
-   - Saved the trained Random Forest model using `joblib` for future deployment.
+4. **Interactive Web App (Gradio) & Serialization:**
+   - Saved the trained Random Forest model using `joblib`.
+   - Built a **Gradio Web Interface** displaying the model's **91.8% R² accuracy** and allowing users to select City, Location, Property Type, Bedrooms, Bathrooms, and Area (in Marla) to get instant price predictions in PKR.
 
 ## 📊 Model Performance Progression
 
@@ -33,10 +34,10 @@ Real estate pricing in Pakistan depends heavily on location, property size, and 
 - **Language:** Python
 - **Data Manipulation:** Pandas, NumPy
 - **Machine Learning:** Scikit-Learn (`LinearRegression`, `RandomForestRegressor`, `train_test_split`, `r2_score`, `mean_squared_error`)
-- **Model Saving:** Joblib
+- **Web Interface & Deployment:** Gradio, Joblib
 - **Environment:** Google Colab
 
 ## 🚀 How to Run
-1. Open the `.ipynb` notebook file in **Google Colab** or **Jupyter Notebook**.
+1. Click **Open in Colab** at the top of the notebook file (`.ipynb`) or open it in Jupyter Notebook.
 2. Download the **Pakistan House Price Prediction** dataset (`Entities.csv`) from Kaggle and update the file path in the data-loading cell.
-3. Run all cells sequentially to train the models and view actual vs. predicted property prices.
+3. Run all cells sequentially to train the models and launch the **Gradio Live Web App** interface.
